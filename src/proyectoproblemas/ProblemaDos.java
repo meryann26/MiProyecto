@@ -45,6 +45,8 @@ public class ProblemaDos {
 
 
 
+        
+    
     public double convertidor(double unidad, String entrada, String salida) {
 
         double resultado = 0;
@@ -77,9 +79,10 @@ public class ProblemaDos {
         System.out.println("Cien dolares a euros son: " + convertidor.convertidor(100, convertidor.getTipoDolar(), convertidor.getTipoEuro()));
 
         
-        System.out.println("Cien dolares a euros son: " + convertidor.convertidor(100, "dolar", convertidor.getTipoEuro()));
-        convertidor.setTipoDolar("DOLLAR"); //seteando un nuevo string para el dolar
-        System.out.println("Cien dolares a euros son: " + convertidor.convertidor(100, "DOLLAR", convertidor.getTipoEuro()));
+        System.out.println("Cien dolares a euros son: " + convertidor.convertidor(100, "dolar", "euro"));
+        convertidor.setTipoDolar("euro"); //cambia dolar por euro
+        convertidor.setTipoEuro("dolar"); //cambia euro por dolar
+        System.out.println("Cien euros a dolares son: " + convertidor.convertidor(100, "euro", "dolar"));
 
 
     }

@@ -26,7 +26,7 @@ public class ProblemaUno {
         double resultado = 0;
 
         if (entrada.equals(salida)) {
-            //caso que entrada y salida sean iguales
+            //caso: que entrada y salida sean iguales
             resultado = unidad;
         } else {
             if (entrada.equals(TIPO_EURO)) {
@@ -47,7 +47,7 @@ public class ProblemaUno {
 
         ProblemaUno convertidor = new ProblemaUno();
 
-        System.out.println("Cien dolares a euros son: " + convertidor.convertidor(100, TIPO_DOLAR, TIPO_EURO));
+        System.out.println("Cien dolares a euros son: " + convertidor.convertidor(1, TIPO_DOLAR, TIPO_EURO));
         System.out.println("Cien euros a dolares son: " + convertidor.convertidor(100, TIPO_EURO, TIPO_DOLAR));
         System.out.println("Cien euros a euros son: " + convertidor.convertidor(100, TIPO_EURO, TIPO_EURO));
 
