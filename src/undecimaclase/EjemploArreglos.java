@@ -16,7 +16,7 @@ public class EjemploArreglos {
         //int[] enteros = {1,3,63,46,88};
         long varNumSuperGrande = 9223372;
         
-        int[] enteros = new int[5];
+        int[] enteros = new int[4];
         
         enteros[3] = 233;
         enteros[4] = 555;
@@ -24,7 +24,7 @@ public class EjemploArreglos {
         // enteros[15] = 7; ArrayIndexOutOfBoundsException
         
         System.out.println(enteros.length);
-        System.out.println(enteros[3]);
+        System.out.println(enteros[4]);
         
         int[] arregloGrande = new int[100];
         

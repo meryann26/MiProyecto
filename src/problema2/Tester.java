@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package problema1;
+package problema2;
+
+import problema1.MaquinaConvertidora;
+import problema1.Moneda;
 
 /**
  *
@@ -18,12 +21,17 @@ public class Tester {
         MaquinaConvertidora conv = new MaquinaConvertidora();
     
         Moneda mon1 = new Moneda("dolar");
+        mon1.setNombre("euro");
         Moneda mon2 = new Moneda ("colon");
-        Moneda mon3 = new Moneda ("euro");
-      
+        mon2.setNombre("dolar");
+        Moneda mon3 = new Moneda ("colon");
+        
+        conv.setCambioDolarColon(595);
+        
+        
         double resultado = conv.convertir(1, mon2, mon3);
                
-                System.out.println("Un colon equivale a " + resultado + " euros");
+                System.out.println("Un dolar equivale a " + resultado + " colones");
     }          
 }
 
