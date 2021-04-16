@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package problema1;
+package problema2;
+
+import problema1.Moneda;
 
 /**
  *
  * @author Meryan
  */
-public class MaquinaConvertidora {
-
-    private double cambioDolarColon = 500;
-    private double cambioEuroColon = 765;
-    private double cambioEuroDolar = 1.53;
+public class CambiadoraMonedas {
+    
+    private double cambioDolarColon= 500;
+    private double cambioEuroColon= 765;
+    private double cambioEuroDolar= 1.53;
 
     public double getCambioDolarColon() {
         return cambioDolarColon;
@@ -38,33 +40,30 @@ public class MaquinaConvertidora {
     public void setCambioEuroDolar(double cambioEuroDolar) {
         this.cambioEuroDolar = cambioEuroDolar;
     }
-
+    
     public double convertir(double cantidad, Moneda monedaEntrada, Moneda monedaSalida) {
-
-        if (monedaEntrada.getNombre().equals("colon") & monedaSalida.getNombre().equals("dolar")) {
+        
+        if(monedaEntrada.getNombre().equals("colon")& monedaSalida.getNombre().equals("dolar"))
             return cantidad / cambioDolarColon;
-        }
-
-        if (monedaEntrada.getNombre().equals("dolar") & monedaSalida.getNombre().equals("colon")) {
+        
+        if(monedaEntrada.getNombre().equals("dolar")& monedaSalida.getNombre().equals("colon"))
             return cantidad * cambioDolarColon;
-        }
-
-        if (monedaEntrada.getNombre().equals("colon") & monedaSalida.getNombre().equals("euro")) {
+        
+        if(monedaEntrada.getNombre().equals("colon")& monedaSalida.getNombre().equals("euro"))
             return cantidad / cambioEuroColon;
-        }
-
-        if (monedaEntrada.getNombre().equals("euro") & monedaSalida.getNombre().equals("colon")) {
+        
+        if(monedaEntrada.getNombre().equals("euro")& monedaSalida.getNombre().equals("colon"))
             return cantidad * cambioEuroColon;
-        }
-
-        if (monedaEntrada.getNombre().equals("dolar") & monedaSalida.getNombre().equals("euro")) {
+        
+        if(monedaEntrada.getNombre().equals("dolar")& monedaSalida.getNombre().equals("euro"))
             return cantidad / cambioEuroDolar;
-        }
-
-        if (monedaEntrada.getNombre().equals("euro") & monedaSalida.getNombre().equals("dolar")) {
+        
+        if(monedaEntrada.getNombre().equals("euro")& monedaSalida.getNombre().equals("dolar"))
             return cantidad * cambioEuroDolar;
-        } else {
+      
+        else{
             return cantidad;
         }
     }
 }
+

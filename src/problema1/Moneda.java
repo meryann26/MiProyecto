@@ -10,9 +10,8 @@ package problema1;
  * @author Meryan
  */
 public class Moneda {
-    
+
     private String nombre;
-    
 
     public String getNombre() {
         return nombre;
@@ -25,23 +24,5 @@ public class Moneda {
     public Moneda(String nombre) {
         this.nombre = nombre;
     }
-  
+
 }
-    
-    
-
-  
-   
-    
-
-   
- 
- 
-
-
-    
-    
-    
-    
-
-

@@ -9,7 +9,6 @@ package problema4;
  *
  * @author Meryan
  */
-import java.util.*;
 import java.util.Scanner;
 
 public class Tester {

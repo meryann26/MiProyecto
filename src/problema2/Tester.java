@@ -5,7 +5,6 @@
  */
 package problema2;
 
-import problema1.MaquinaConvertidora;
 import problema1.Moneda;
 
 /**
@@ -13,25 +12,21 @@ import problema1.Moneda;
  * @author Meryan
  */
 public class Tester {
-    
-    
-    
+
     public static void main(String args[]) {
-        
-        MaquinaConvertidora conv = new MaquinaConvertidora();
-    
+
+        CambiadoraMonedas conv = new CambiadoraMonedas();
+
         Moneda mon1 = new Moneda("dolar");
         mon1.setNombre("euro");
-        Moneda mon2 = new Moneda ("colon");
+        Moneda mon2 = new Moneda("euro");
         mon2.setNombre("dolar");
-        Moneda mon3 = new Moneda ("colon");
-        
-        conv.setCambioDolarColon(595);
-        
-        
-        double resultado = conv.convertir(1, mon2, mon3);
-               
-                System.out.println("Un dolar equivale a " + resultado + " colones");
-    }          
-}
+        Moneda mon3 = new Moneda("colon");
 
+        conv.setCambioEuroDolar(2);
+
+        double resultado = conv.convertir(1, mon1, mon2);
+
+        System.out.println("Un euro equivale a " + resultado + " dolares");
+    }
+}

@@ -49,7 +49,7 @@ public class Arreglos {
     public void crearArreglo(Scanner scan) {
         int i, n;
 
-        System.out.println("Introduce el número de elementos de la lista ");
+        System.out.println("Introduce el número de elementos de la lista: ");
         n = scan.nextInt();
         int numeros[] = new int[n];
 
@@ -62,15 +62,15 @@ public class Arreglos {
         imprimirArreglo(numeros);
 
         while (true) {
-            System.out.println("Introduce el número a buscar");
+            System.out.println("Introduce el número a buscar: ");
             n = scan.nextInt();
 
             int indice = busquedaBinaria(numeros, n);
             if (indice != -1) {
-                System.out.println("Sí se encontró el número");
+                System.out.println("Sí se encontró el número.");
                 System.out.println("");
             } else {
-                System.out.println("No se encontró el número");
+                System.out.println("No se encontró el número.");
                 System.out.println("");
             }
         }
