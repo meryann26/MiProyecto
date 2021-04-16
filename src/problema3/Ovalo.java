@@ -5,10 +5,7 @@
  */
 package problema3;
 
-/**
- *
- * @author Andres
- */
+
 public class Ovalo {
 
     int posX;

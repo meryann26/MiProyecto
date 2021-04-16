@@ -5,10 +5,7 @@
  */
 package problema3;
 
-/**
- *
- * @author Andres
- */
+
 public class Rectangulo {
 
     int posX;
