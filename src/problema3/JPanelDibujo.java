@@ -28,7 +28,7 @@ public class JPanelDibujo extends JPanel {
         int N = 10;
         while (N != 0) {
             Rectangulo rect = new Rectangulo((int) (Math.random() * 200), (int) (Math.random() * 200), (int) (Math.random() * 500), (int) (Math.random() * 500));
-            g.drawRect(rect.getPosX(), rect.getPosY(), rect.getAncho(), rect.getAlto()); //dibuja un ovalo sin fondo
+            g.drawRect(rect.getPosX(), rect.getPosY(), rect.getAncho(), rect.getAlto()); //dibuja un rectángulo sin fondo
             N--;
         }
     }

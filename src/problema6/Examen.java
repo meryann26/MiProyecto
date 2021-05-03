@@ -13,52 +13,74 @@ import java.util.Date;
  */
 public class Examen {
 
-    private Alumno alumno;
-
-    private String asignatura;
-    private double puntajeTotal;
-    private double puntosObtenidos;
-    private double calificacion;
+    Alumno alumno;
+    private int nota;
+    private String nombreMateria;
+    private int puntosTotal;
+    private int puntosObtenidos;
     private Date fecha;
 
-    public Alumno getAlumno() {
-        return alumno;
+    public Examen() {
+
     }
 
-    public void setAlumno(Alumno alumno) {
+    public Examen(Alumno alumno, int nota, int puntosTotal, int puntosObtenidos, Date fecha) {
         this.alumno = alumno;
+        this.nota = nota;
+        this.puntosTotal = puntosTotal;
+        this.puntosObtenidos = puntosObtenidos;
+        this.fecha = fecha;
     }
 
-    public String getAsignatura() {
-        return asignatura;
+    public Examen(int nota, String nombreMateria, int puntosTotal, int puntosObtenidos, Date fecha) {
+        this.nota = nota;
+        this.nombreMateria = nombreMateria;
+        this.puntosTotal = puntosTotal;
+        this.puntosObtenidos = puntosObtenidos;
+        this.fecha = fecha;
     }
 
-    public void setAsignatura(String asignatura) {
-        this.asignatura = asignatura;
+    public Examen(String nombreMateria, int puntosTotal, Date fecha) {
+        this.nombreMateria = nombreMateria;
+        this.puntosTotal = puntosTotal;
+        this.fecha = fecha;
     }
 
-    public double getPuntajeTotal() {
-        return puntajeTotal;
+    @Override
+    public String toString() {
+        return "Examen{" + "nota=" + nota + ", nombreMateria=" + nombreMateria + ", puntosTotal=" + puntosTotal + ", Fecha=" + fecha + '}';
     }
 
-    public void setPuntajeTotal(double puntajeTotal) {
-        this.puntajeTotal = puntajeTotal;
+    public int getNota() {
+        return nota;
     }
 
-    public double getPuntosObtenidos() {
+    public void setNota(int nota) {
+        this.nota = nota;
+    }
+
+    public String getNombreMateria() {
+        return nombreMateria;
+    }
+
+    public void setNombreMateria(String nombreMateria) {
+        this.nombreMateria = nombreMateria;
+    }
+
+    public int getPuntosTotal() {
+        return puntosTotal;
+    }
+
+    public void setPuntosTotal(int puntosTotal) {
+        this.puntosTotal = puntosTotal;
+    }
+
+    public int getPuntosObtenidos() {
         return puntosObtenidos;
     }
 
-    public void setPuntosObtenidos(double puntosObtenidos) {
+    public void setPuntosObtenidos(int puntosObtenidos) {
         this.puntosObtenidos = puntosObtenidos;
-    }
-
-    public double getCalificacion() {
-        return calificacion;
-    }
-
-    public void setCalificacion(double calificacion) {
-        this.calificacion = calificacion;
     }
 
     public Date getFecha() {
@@ -67,6 +89,14 @@ public class Examen {
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
+    }
+
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
+    public void setAlumno(Alumno Alumno) {
+        this.alumno = Alumno;
     }
 
 }

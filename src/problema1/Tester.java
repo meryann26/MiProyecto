@@ -20,7 +20,12 @@ public class Tester {
         Moneda mon3 = new Moneda("euro");
 
         double resultado = conv.convertir(1, mon2, mon3);
+        double resultado1 = conv.convertir(1, mon3, mon1);
+        double resultado2 = conv.convertir(100, mon1, mon2);
 
         System.out.println("Un colon equivale a " + resultado + " euros");
+        System.out.println("Un euro equivale a " + resultado1 + " dolares");
+        System.out.println("Cien dolares equivale a " + resultado2 + " colones");
+        
     }
 }

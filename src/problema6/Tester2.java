@@ -5,20 +5,10 @@
  */
 package problema6;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Meryan
  */
-public class Tester {
-    
-    public static void main (String args []){
-        
-        SistemaNotas sistema = new SistemaNotas();
-        Scanner s = new Scanner(System.in);
-        
-        while (true){
-    }
+public class Tester2 {
     
 }

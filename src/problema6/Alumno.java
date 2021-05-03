@@ -11,10 +11,43 @@ package problema6;
  */
 public class Alumno {
 
-    private String nombre;
-    private String primerApellido;
-    private String segundoApellido;
-    private String carnet;
+    PadreFamilia padre;
+    String nombre;
+    String apellido;
+    int carne;
+
+    public Alumno() {
+    }
+
+    public Alumno(PadreFamilia padre, String nombre, String apellido, int carne) {
+        this.padre = padre;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.carne = carne;
+    }
+
+    public Alumno(String nombre, String apellido, int carne) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.carne = carne;
+    }
+
+    public void mostrardatos() {
+        System.out.println(nombre + " " + apellido + " " + carne);
+    }
+
+    public void imprimirPadreFamilia() {
+        System.out.println(padre.getNombre() + " " + padre.getApellidos());
+        System.out.println(padre);
+    }
+
+    public PadreFamilia getPadre() {
+        return padre;
+    }
+
+    public void setPadre(PadreFamilia padre) {
+        this.padre = padre;
+    }
 
     public String getNombre() {
         return nombre;
@@ -24,28 +57,20 @@ public class Alumno {
         this.nombre = nombre;
     }
 
-    public String getPrimerApellido() {
-        return primerApellido;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setPrimerApellido(String primerApellido) {
-        this.primerApellido = primerApellido;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
-    public String getSegundoApellido() {
-        return segundoApellido;
+    public int getCarne() {
+        return carne;
     }
 
-    public void setSegundoApellido(String segundoApellido) {
-        this.segundoApellido = segundoApellido;
-    }
-
-    public String getCarnet() {
-        return carnet;
-    }
-
-    public void setCarnet(String carnet) {
-        this.carnet = carnet;
+    public void setCarne(int carne) {
+        this.carne = carne;
     }
 
 }

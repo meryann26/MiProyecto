@@ -67,10 +67,10 @@ public class Arreglos {
 
             int indice = busquedaBinaria(numeros, n);
             if (indice != -1) {
-                System.out.println("Sí se encontró el número.");
+                System.out.println("¡Sí se encontró el número!");
                 System.out.println("");
             } else {
-                System.out.println("No se encontró el número.");
+                System.out.println("¡No se encontró el número!");
                 System.out.println("");
             }
         }

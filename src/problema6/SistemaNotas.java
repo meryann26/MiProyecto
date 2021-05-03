@@ -10,37 +10,58 @@ package problema6;
  * @author Meryan
  */
 public class SistemaNotas {
-
-    String[] arregloNotas;
-    int indice;
-    String ejemplo;
-
-    public SistemaNotas(int cantidadDeEstudiantes) {
-        arregloNotas = new String[cantidadDeEstudiantes];
-        indice = 0;
+    int maxRegistros;
+    Examen[] examenes;
+    int cont;
+    
+    public SistemaNotas(){
+        maxRegistros=100;
+        examenes = new Examen [maxRegistros];
+        cont=0;
     }
 
-    public void agregarNota(String notaEstudiante) {
-        try {
+    public SistemaNotas(int maxRegistros) {
+        examenes = new Examen[maxRegistros];
+        cont=0;
+    }
+    
+    
+    
+    public boolean eliminiarEx(){
+        boolean resultado=false;
+        if(cont!=0){
+            examenes[cont-1]=null;
+            cont--;
+            resultado=true;
+        }
+        return resultado;
+    }
+    
+    public boolean agregarEx(Examen ex) {
 
-            try {
-                arregloNotas[indice++] = notaEstudiante;
-
-            } catch (ArrayIndexOutOfBoundsException ae) {
-                System.out.println("Demasiados datos para el vector de quices");
-                indice--;
-            }
-        } catch (Exception e) {
-            System.out.println("Error más general");
+        boolean resultado = false;
+        if (cont < maxRegistros) {
+            examenes[cont] = ex;
+            cont++;
+            resultado = true;
+        }
+        return resultado;
+    }
+    
+    
+    public void mostrarExamenes(){
+        for (int i=0; i<cont;i++){
+            if(examenes[i]!=null)
+                System.out.println(examenes[i].toString());
         }
     }
-
-    public int getIndex() {
-        return indice;
+    
+    public float promedioNotas(){
+        float retorno=0f;
+        
+        return retorno;
     }
-
-    public String getNota(int i) {
-        return arregloNotas[i];
-    }
-
+    
+   
+    
 }
