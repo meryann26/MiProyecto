@@ -11,4 +11,10 @@ package problema6;
  */
 public class Tester2 {
     
+    public static void main(String args[]){
+        
+        SistemaNotasControlador c = new SistemaNotasControlador();
+        c.iniciar();
+    }
+    
 }
