@@ -85,7 +85,5 @@ public class SistemaNotas {
     public void setCont(int cont) {
         this.cont = cont;
     }
-    
-    
 
 }

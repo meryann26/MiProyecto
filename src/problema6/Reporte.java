@@ -35,7 +35,7 @@ public class Reporte {
 
         for (int i = 0; i < sn.cont; i++) {
             reporte += sn.getExamenes()[i].getAlumno().getNombre() + sn.examenes[i].getAlumno().getApellido() + "\n";
-            reporte += sn.getExamenes()[i].toString() + "\n";
+         //   reporte += sn.getExamenes()[i].toString() + "\n";
         }
 
         vista.mostrarMensajeInfo(reporte);
@@ -49,7 +49,7 @@ public class Reporte {
         for (int i = 0; i < sn.cont; i++) {
             if (sn.getExamenes()[i].getNota() < nota) {
                 reporte += sn.getExamenes()[i].getAlumno().getNombre() + sn.examenes[i].getAlumno().getApellido() + "\n";
-                reporte +=sn.getExamenes()[i].toString() + "\n";
+           //     reporte +=sn.getExamenes()[i].toString() + "\n";
             }
 
             vista.mostrarMensajeInfo(reporte);
