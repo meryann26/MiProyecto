@@ -5,6 +5,8 @@
  */
 package parcialfinal;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Meryan
@@ -12,9 +14,16 @@ package parcialfinal;
 public class EquipoSonidoVista {
     EquipoSonido equipo;
     
+    
+    
     public int mostrarMenu(){
         Scanner s = new Scanner(System.in);
-        System.out.println("Menú")
+        System.out.println("Menú\n1 Reproducir la lista en orden \n2 Reproducir lista en fomma aleatoria"
+                + "\n3 Mostrar lista completa \n4 Agregar nuevo audio \n5 Eliminar audio");
+        
+        int opcionSeleccionada = s.nextInt();
+        
+        return opcionSeleccionada;
     }
     
 }

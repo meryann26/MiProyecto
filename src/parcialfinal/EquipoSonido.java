@@ -12,12 +12,19 @@ import java.util.Arrays;
  * @author Meryan
  */
 public class EquipoSonido {
-
-    String[] listaReproduccion = new String[1000];
+    int maxRegistros;
+    String[] listaReproduccion;
+    int cont;
 
     Parlante parlantederecho = new Parlante(true, 0, "parlantederecho");
     Parlante parlanteizquierdo = new Parlante(true, 0, "parlanteizquierdo");
     ParlanteSubwoofer bajos = new ParlanteSubwoofer();
+    
+    public EquipoSonido() {
+        maxRegistros = 1000;
+        listaReproduccion = new String[maxRegistros];
+        cont = 0;
+    }
     
     private void imprimirListaReproduccion(){
         for(String elem : listaReproduccion){
@@ -27,23 +34,23 @@ public class EquipoSonido {
     
     public void  listaEnOrden(){
         Arrays.sort(listaReproduccion);
-        
-        
-        
-        imprimirArreglo();
+        imprimirListaReproduccion();
     }
     
-    public listaAleatoria(){
-    }
-    
-    public listaCompleta(){
+    public void listaAleatoria(){
         
     }
     
-    public agregarAudio(String nuevoAudio){
+    public void listaCompleta(){
         
     }
     
-    public eliminarAudio(String)
+    public void agregarAudio(String nuevoAudio){
+        
+    }
+    
+    public void eliminarAudio(){
+        
+    }
 
 }

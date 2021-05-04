@@ -12,8 +12,8 @@ package parcialfinal;
 public class Tester {
     
     public static void main (String args[]){
-       // EquipoSonidoControlador controlador = new EquipoSonidoControlador();
-       // controlador.iniciar();
+        EquipoSonidoControlador controlador = new EquipoSonidoControlador();
+        controlador.iniciar();
     }
     
 }
