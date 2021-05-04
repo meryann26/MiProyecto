@@ -5,6 +5,8 @@
  */
 package parcialfinal;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Meryan
@@ -17,7 +19,18 @@ public class EquipoSonido {
     Parlante parlanteizquierdo = new Parlante(true, 0, "parlanteizquierdo");
     ParlanteSubwoofer bajos = new ParlanteSubwoofer();
     
-    public listaEnOrden(){
+    private void imprimirListaReproduccion(){
+        for(String elem : listaReproduccion){
+            System.out.print(elem);
+        }
+    }
+    
+    public void  listaEnOrden(){
+        Arrays.sort(listaReproduccion);
+        
+        
+        
+        imprimirArreglo();
     }
     
     public listaAleatoria(){
