@@ -31,6 +31,9 @@ public class SistemaNotasControlador {
                 }
                 case 2: {
                     
+                        
+                    
+                    
                     break;
                 }
                 case 3: {
