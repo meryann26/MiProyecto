@@ -39,7 +39,6 @@ public class Parlante {
         this.direccionSonido = direccionSonido;
     }
 
- 
     public Parlante(boolean habilitado, int volumen, String direccionSonido) {
         this.habilitado = habilitado;
         this.volumen = volumen;

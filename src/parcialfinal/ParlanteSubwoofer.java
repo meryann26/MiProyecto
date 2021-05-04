@@ -10,9 +10,10 @@ package parcialfinal;
  * @author Meryan
  */
 public class ParlanteSubwoofer {
+
     private boolean habilitado;
     private int volumen;
-    
+
     public void subirVolumen() {
         volumen++;
     }
@@ -28,8 +29,5 @@ public class ParlanteSubwoofer {
     public void deshabilitar() {
         habilitado = false;
     }
-    
-    
-    
-    
+
 }

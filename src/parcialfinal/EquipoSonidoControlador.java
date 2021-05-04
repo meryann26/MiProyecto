@@ -12,32 +12,36 @@ import java.util.Scanner;
  * @author Meryan
  */
 public class EquipoSonidoControlador {
+
     EquipoSonido equipo = new EquipoSonido();
     EquipoSonidoVista vista = new EquipoSonidoVista(equipo);
-    
-    public void iniciar(){
-        while(true){
+
+    public void iniciar() {
+        while (true) {
             int opcion = vista.mostrarMenu();
-            
-            switch(opcion){
-                case 1:{
+
+            switch (opcion) {
+                case 1: {
                     equipo.listaEnOrden();
-                    
+
                     break;
                 }
-                case 2:{
+                case 2: {
                     break;
                 }
-                case 3:{
+                case 3: {
+                    equipo.listaCompleta();
                     break;
                 }
-                case 4:{
+                case 4: {
+                    System.out.println("Ingrese el audio que desee agregar:");
                     Scanner s = new Scanner(System.in);
                     String nuevoAudio = s.next();
                     equipo.agregarAudio(nuevoAudio);
+                    System.out.println("");
                     break;
                 }
-                case 5:{
+                case 5: {
                     equipo.eliminarAudio();
                     break;
                 }
