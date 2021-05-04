@@ -12,7 +12,13 @@ import java.util.Scanner;
  * @author Meryan
  */
 public class EquipoSonidoVista {
-    EquipoSonido equipo;
+     private EquipoSonido equipo;
+
+    public EquipoSonidoVista(EquipoSonido equipo) {
+        this.equipo = equipo;
+    }
+     
+     
     
     
     

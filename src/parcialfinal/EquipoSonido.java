@@ -42,15 +42,33 @@ public class EquipoSonido {
     }
     
     public void listaCompleta(){
+        for (int i = 0; i < cont; i++) {
+            System.out.print(listaReproduccion[i] + ", ");
+        }
+
+    }
+        
+    
+    
+    public boolean agregarAudio(String nuevoAudio){
+        boolean resultado = false;
+        if (cont < maxRegistros) {
+            listaReproduccion[cont] = nuevoAudio;
+            cont++;
+            resultado = true;
+        }
+        return resultado;
         
     }
     
-    public void agregarAudio(String nuevoAudio){
-        
-    }
-    
-    public void eliminarAudio(){
-        
+    public boolean eliminarAudio(){
+        boolean resultado = false;
+        if (cont != 0) {
+            cont--;
+            listaReproduccion[cont - 1] = null;
+            resultado = true;
+        }
+        return resultado;
     }
 
 }
